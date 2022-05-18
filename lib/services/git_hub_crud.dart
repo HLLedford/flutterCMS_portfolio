@@ -3,7 +3,9 @@ import 'package:http/http.dart' as http;
 import '../models/git_hub_responses.dart';
 
 class GitHubCrudService {
-  static const gitHubAccessToken = "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";
+  static const gitHubAccessToken = "";
+  //I have removed this in order to make this Repo public.
+  //I am use to just adding stuff like this to the Azure Key Valut and accessing/storing that way.
 
   static Future<List<Project>> fetchProjects() async {
     final response = await http.get(Uri.parse(
